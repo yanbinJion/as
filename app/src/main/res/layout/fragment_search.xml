@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <AutoCompleteTextView
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:background="@drawable/bg_comment_edittext"
+                android:hint="编号或项目名称"
+                android:maxLength="30"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="#ED5353"
+                android:drawableLeft="@drawable/fangdajing"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="搜索"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="搜索参加编号(ID)或名称,为Ta投票吧!"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

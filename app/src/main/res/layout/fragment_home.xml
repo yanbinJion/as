@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/realcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/ll_bottom" />
+    <FrameLayout
+        android:id="@+id/left_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:layout_below="@+id/ll_bottom" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/botoom_bar_bg">
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tl:tl_iconHeight="@dimen/dimen_30"
+            tl:tl_iconMargin="@dimen/dimen_0"
+            tl:tl_textSelectColor="@color/app_topbg"
+            tl:tl_textUnselectColor="@color/text_gray"
+            tl:tl_textsize="@dimen/dimen_14sp">
+
+
+        </com.flyco.tablayout.CommonTabLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom_left"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/botoom_bar_bg">
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tab_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tl:tl_iconHeight="@dimen/dimen_30"
+            tl:tl_iconMargin="@dimen/dimen_0"
+            tl:tl_textSelectColor="@color/text_gray"
+            tl:tl_textUnselectColor="@color/text_gray"
+            tl:tl_textsize="@dimen/dimen_14sp">
+
+
+        </com.flyco.tablayout.CommonTabLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

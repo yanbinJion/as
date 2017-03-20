@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_lb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <com.wisdomrouter.app.view.RatioImageView
+                    android:id="@+id/iv_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35"
+                android:background="@color/botoom_bar_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_8"
+                android:paddingRight="@dimen/dimen_8">
+
+                <com.wisdomrouter.app.view.CommonTabLayoutCustom
+                    android:id="@+id/tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/ll_more_columns"
+                    tl:tl_indicator_color="@color/app_topbg"
+                    tl:tl_indicator_margin_bottom="@dimen/dimen_4"
+                    tl:tl_indicator_margin_top="@dimen/dimen_4"
+                    tl:tl_indicator_style="BLOCK"
+                    tl:tl_tab_padding="@dimen/dimen_15"
+                    tl:tl_textAllCaps="true"
+                    tl:tl_textSelectColor="@color/white"
+                    tl:tl_textUnselectColor="@color/black"
+                    tl:tl_textsize="@dimen/dimen_18sp" />
+                <!--  <com.flyco.tablayout.SlidingTabLayout
+                      android:id="@+id/tab"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_alignParentLeft="true"
+                      android:layout_toLeftOf="@+id/ll_more_columns"
+                      tl:tl_indicator_color="@color/app_topbg"
+                      tl:tl_indicator_margin_bottom="@dimen/dimen_4"
+                      tl:tl_indicator_margin_top="@dimen/dimen_4"
+                      tl:tl_indicator_style="BLOCK"
+                      tl:tl_tab_padding="@dimen/dimen_15"
+                      tl:tl_textSelectColor="@color/white"
+                      tl:tl_textUnselectColor="@color/black"
+                      tl:tl_textsize="@dimen/dimen_14sp" />-->
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10">
+
+                <View
+                    android:id="@+id/vv_point"
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_5"
+                   >
+
+                </View>
+                <View
+                    android:id="@+id/vv_line"
+                    android:layout_width="@dimen/dimen_6"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_desc"
+                    android:layout_alignTop="@+id/tv_desc"
+                    android:layout_toLeftOf="@+id/tv_desc"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:layout_marginBottom="@dimen/dimen_2"
+                    android:background="@color/gray_line">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/vv_point"
+                    android:textSize="@dimen/dimen_18sp" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+            <com.wisdomrouter.app.view.HomeViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+    <!--   </com.wisdomrouter.app.view.VerticalScrollView>-->
+</LinearLayout>

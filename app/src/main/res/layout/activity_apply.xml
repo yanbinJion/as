@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/apply_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_apply"
+        android:drawableLeft="@drawable/applyname"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+         android:singleLine="true"
+        android:hint="请填写真实姓名"
+        android:padding="5dp" /> 
+
+    <EditText
+        android:id="@+id/apply_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_apply"
+        android:drawableLeft="@drawable/applymobile"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="11"
+        android:hint="11位手机号"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/apply_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_apply"
+        android:drawableLeft="@drawable/applymark"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:maxLines="4"
+        android:hint="备注"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/apply_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_rectangle_lanmu"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

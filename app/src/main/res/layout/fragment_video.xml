@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.wisdomrouter.app.view.CommonTabLayoutCustom
+        android:id="@+id/comtab1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_35"
+        android:background="@color/botoom_bar_bg"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        tl:tl_indicator_color="@color/app_topbg"
+        tl:tl_indicator_margin_bottom="@dimen/dimen_4"
+        tl:tl_indicator_margin_top="@dimen/dimen_4"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_tab_padding="@dimen/dimen_15"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/black"
+        tl:tl_textsize="@dimen/dimen_18sp" />
+    <com.wisdomrouter.app.view.SlidingTabLayoutCustom
+        android:id="@+id/slidetab1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_35"
+        android:background="@color/botoom_bar_bg"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8"
+        tl:tl_indicator_color="@color/app_topbg"
+        tl:tl_indicator_margin_bottom="@dimen/dimen_4"
+        tl:tl_indicator_margin_top="@dimen/dimen_4"
+        tl:tl_indicator_style="BLOCK"
+        tl:tl_tab_padding="@dimen/dimen_15"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/black"
+        tl:tl_textsize="@dimen/dimen_18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <FrameLayout
+        android:id="@+id/fl_content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

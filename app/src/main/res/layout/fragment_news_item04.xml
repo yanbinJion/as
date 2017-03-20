@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listitem_selector"
+    android:orientation="vertical" >
+
+    <!-- 标题  + 简介 + 左图 -->
+
+    <LinearLayout
+        android:id="@+id/pic_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/top_img"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_90"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp" >
+
+            <TextView
+                android:id="@+id/top_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left|top"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="股份第三方第三方多风骚的恐怕是空洞阿萨姆"
+                android:textColor="@color/news_text_intro"
+                android:textSize="@dimen/dimen_18sp"
+                 />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_content" >
+
+                <TextView
+                    android:id="@+id/top_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/top_time"
+                    android:layout_alignTop="@+id/top_time"
+                    android:layout_toLeftOf="@+id/top_time"
+                    android:gravity="left"
+                    android:paddingRight="15dp"
+                    android:text="评论 24"
+                    android:textColor="@color/news_text_other"
+                    android:textSize="@dimen/news_list_other" />
+
+                <TextView
+                    android:id="@+id/top_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dp"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="08-24 12:39"
+                    android:textColor="@color/news_text_other"
+                    android:textSize="@dimen/news_list_other" />
+
+                <TextView
+                    android:id="@+id/top_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="left"
+                    android:text="谁谁谁"
+                    android:textColor="@color/news_text_other"
+                    android:textSize="@dimen/news_list_other" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray" />
+
+</LinearLayout>

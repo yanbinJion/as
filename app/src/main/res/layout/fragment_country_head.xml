@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <com.wisdomrouter.app.view.HomeViewPager
+            android:id="@+id/top_lb"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="3dp" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_column"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_weight="1" >
+
+            <com.wisdomrouter.app.view.ColumnHorizontalScrollView
+                android:id="@+id/cloumn_country"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:background="@color/gray"
+                android:layout_height="@dimen/dimen_40">
+
+                <LinearLayout
+                    android:id="@+id/mRadioGroup_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingRight="@dimen/dimen_10" />
+            </com.wisdomrouter.app.view.ColumnHorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/shade_left"
+                android:layout_width="10.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/shade_right"
+                android:layout_width="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more_columns"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip" >
+
+            <ImageView
+                android:id="@+id/button_more_columns"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                android:src="@drawable/channle_add" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

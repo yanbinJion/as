@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/three_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pic_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/dimen_18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_text"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <com.wisdomrouter.app.view.RatioImageView
+                    android:id="@+id/pic_img01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <com.wisdomrouter.app.view.RatioImageView
+                    android:id="@+id/pic_img02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <com.wisdomrouter.app.view.RatioImageView
+                    android:id="@+id/pic_img03"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/three_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:singleLine="true"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dimen_10sp"/>
+
+            <TextView
+                android:id="@+id/three_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dimen_10sp"/>
+
+            <TextView
+                android:id="@+id/three_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dimen_10sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@color/line"/>
+</LinearLayout>

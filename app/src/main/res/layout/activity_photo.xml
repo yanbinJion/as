@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/photo_relativeLayout"
+        android:layout_below="@+id/top"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/photo_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:gravity="top"
+            android:hint="请输入..."
+            android:padding="8dip"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/photo_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/photo_bt_exit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_quxiao"
+             android:visibility="gone"
+             />
+
+        <Button
+            android:id="@+id/photo_bt_del"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bt_shanchu" />
+
+        <Button
+            android:id="@+id/photo_bt_enter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_queding"
+            android:visibility="gone"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

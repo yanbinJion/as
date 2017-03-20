@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <com.wisdomrouter.app.view.ViewPaperListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#c9c9c9"
+        android:dividerHeight="0px"
+        android:fadingEdge="none"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="server_items">
+        <item>政务大厅</item>
+        <item>违章查询</item>
+        <item>快递查询</item>
+        <item>公积金查询</item>
+        <item>公交线路</item>
+        <item>话费查询</item>
+        <item>电费查询</item>
+        <item>班车时刻</item>
+        <item>公共自行车</item>
+        <item>餐饮</item>
+        <item>丽人</item>
+        <item>家装</item>
+        <item>休闲</item>
+        <item>便民</item>
+    </string-array>
+
+    <!-- PagerSlidingTabStrip -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+</resources>

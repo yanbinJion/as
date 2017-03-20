@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/intro_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_title"
+            android:textSize="@dimen/dimen_18sp"/>
+
+        <com.wisdomrouter.app.view.RatioImageView
+            android:id="@+id/top_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/custom_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:padding="@dimen/dimen_3"
+                android:background="@color/custom_text_color_blue"
+                android:textSize="@dimen/dimen_10sp"/>
+            <TextView
+            android:id="@+id/top_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dimen_10sp"/>
+
+            <TextView
+                android:id="@+id/top_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dimen_10sp"/>
+
+            <TextView
+                android:id="@+id/top_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dimen_10sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@color/line"/>
+</LinearLayout>

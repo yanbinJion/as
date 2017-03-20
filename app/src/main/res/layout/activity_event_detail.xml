@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10">
+
+    <ScrollView
+        android:id="@+id/event_scro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:textColor="@color/news_text_title"
+                    android:textSize="@dimen/dimen_20sp" />
+
+                <TextView
+                    android:id="@+id/event_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/event_title"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_marginTop="8dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <TextView
+                    android:id="@+id/event_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/event_title"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/event_1"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/dimen_16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+                <com.wisdomrouter.app.view.RatioImageView
+                    android:id="@+id/event_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/event_2"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:gravity="center_vertical"
+                        android:text="活动日期:"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/event_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginStart="@dimen/dimen_10"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/event_5"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:gravity="center_vertical"
+                        android:text="报名开始时间:"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/event_starttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/event_3"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:gravity="center_vertical"
+                        android:text="报名截止时间:"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/event_endtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/event_4"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:gravity="center_vertical"
+                        android:text="活动地点:"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/event_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/event_person"
+                        android:drawablePadding="@dimen/dimen_10"
+                        android:gravity="center_vertical"
+                        android:text="已"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/event_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="人报名"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/event_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:text=""
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/dimen_16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/event_6"
+                    android:drawablePadding="@dimen/dimen_10"
+                    android:gravity="center_vertical"
+                    android:text="活动详情"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <WebView
+                    android:id="@+id/event_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_25"
+                    android:layout_marginTop="-3dp"
+                    android:textColor="@color/registerwv"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/event_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/shape_rectangle_lanmu"
+        android:gravity="center"
+        android:text="我要报名"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

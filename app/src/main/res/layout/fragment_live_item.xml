@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pic_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/listitem_selector"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/vv"
+            android:layout_width="@dimen/dimen_3"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/tv_living_list_view"/>
+
+        <RelativeLayout
+            android:paddingBottom="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:gravity="center_vertical"
+                    android:text="01"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/dimen_22sp"/>
+
+                <TextView
+                    android:id="@+id/txt_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_toRightOf="@+id/txt_day"
+                    android:gravity="center_vertical"
+                    android:text="3月"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/dimen_16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_toRightOf="@+id/rl_day">
+
+                <TextView
+                    android:id="@+id/pic_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/txt_zb"
+                    android:singleLine="true"
+                    android:text="哈哈哈哈哈哈"
+                    android:textColor="@color/text_title"
+                    android:textSize="@dimen/dimen_18sp"/>
+
+                <TextView
+                    android:id="@+id/txt_zb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_rectangle_lanmu_yellow"
+                    android:paddingBottom="@dimen/dimen_2"
+                    android:paddingLeft="@dimen/dimen_5"
+                    android:paddingRight="@dimen/dimen_5"
+                    android:paddingTop="@dimen/dimen_2"
+                    android:text="直播中"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/pic_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pic_title"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="新疆和田表彰围捕"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dimen_12sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

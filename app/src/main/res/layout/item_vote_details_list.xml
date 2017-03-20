@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_vote_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:text="最萌小狗评选活动投标开始了!"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10" >
+
+
+        <TextView
+            android:id="@+id/tv_vote_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015年08月25号"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/dimen_12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_vote_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150"
+        android:layout_marginTop="@dimen/dimen_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="参与选手"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/tv_vote_detail_people_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="16"
+                android:textSize="@dimen/dimen_18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/darkgray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="累计投票"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/tv_vote_detail_piao_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="133"
+                android:textSize="@dimen/dimen_18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/darkgray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="访问量"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/tv_vote_detail_look_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="305"
+                android:textSize="@dimen/dimen_18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10" >
+
+        <TextView
+            android:id="@+id/tv_vote_detail_class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="活动介绍"
+            android:textSize="@dimen/dimen_16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="活动日期"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/tv_vote_detail_class_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2015-11-15 08:00"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/dimen_14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="截止日期"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <TextView
+            android:id="@+id/tv_vote_detail_class_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2015-11-15 08:00"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/dimen_14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@color/darkgray" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:text="投票区"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/dimen_16sp" />
+
+</LinearLayout>

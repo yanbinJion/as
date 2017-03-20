@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:background="@drawable/listitem_selector"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:text="浙江宁波奉化市一幢5层居民倒塌多人被埋"
+        android:textColor="#484848"
+        android:textSize="@dimen/news_list_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/news_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_title"
+        android:lines="2"
+        android:paddingLeft="5dp"
+        android:text="据央视报道，4日9时许，位于浙江省宁波奉化市大成路居敬小区29"
+        android:textColor="#909090"
+        android:textSize="@dimen/dimen_12sp" />
+
+    <TextView
+        android:id="@+id/news_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/news_content"
+        android:layout_marginTop="19dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:text="4082跟帖"
+        android:textColor="#909090"
+        android:textSize="@dimen/dimen_12sp" />
+
+</RelativeLayout>

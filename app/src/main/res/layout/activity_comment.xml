@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        layout="@layout/activity_title_common" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:orientation="vertical" >
+
+        <com.wisdomrouter.app.view.ViewPaperListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:focusableInTouchMode="false"
+            android:listSelector="@android:color/transparent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dimen_7"
+            android:paddingLeft="@dimen/dimen_7"
+            android:paddingRight="@dimen/dimen_7"
+            android:paddingTop="@dimen/dimen_7" >
+
+            <EditText
+                android:id="@+id/txt_write_review"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_article_list_edit"
+                android:maxLength="140"
+                android:maxLines="4" />
+
+            <Button
+                android:id="@+id/txt_send"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_article_list_button"
+                android:text="发表"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_comblank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000" />
+
+</RelativeLayout>

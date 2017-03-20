@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_35"
+        android:background="@color/botoom_bar_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_8"
+        android:paddingRight="@dimen/dimen_8">
+
+        <com.wisdomrouter.app.view.SlidingTabLayoutCustom
+            android:id="@+id/tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ll_more_columns"
+            tl:tl_indicator_color="@color/app_topbg"
+            tl:tl_indicator_margin_bottom="@dimen/dimen_4"
+            tl:tl_indicator_margin_top="@dimen/dimen_4"
+            tl:tl_tab_padding="@dimen/dimen_15"
+            tl:tl_indicator_style="BLOCK"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/black"
+            tl:tl_textsize="@dimen/dimen_18sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_more_columns"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/button_more_columns"
+                android:layout_width="@dimen/dimen_18"
+                android:layout_height="@dimen/dimen_18"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:src="@drawable/channle_add" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:background="#fff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

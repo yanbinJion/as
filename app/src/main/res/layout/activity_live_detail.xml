@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:alpha="1"
+        android:gravity="center_vertical|right" >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/live_close_ic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/ll_top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_comment_edittext"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_64"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/dimen_20"
+            android:text="简介"
+            android:textColor="@color/votedetailvolor"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dimen_11"
+            android:layout_marginRight="@dimen/dimen_11"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:padding="5dp"
+            android:singleLine="false"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:textColor="@color/votedetailtextvolor"
+            android:textSize="@dimen/news_list_title" />
+        <WebView 
+            android:id="@+id/web_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:gravity="top"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:singleLine="false"
+            android:visibility="gone"
+            android:textSize="@dimen/news_list_other" />
+    </LinearLayout>
+
+</RelativeLayout>

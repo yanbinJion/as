@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="crop__bar_height">48dp</dimen>
+    <!-- 统一的头部高度 -->
+    <dimen name="title_comment_height">45dp</dimen>
+    <dimen name="dimen_0">0dp</dimen>
+    <dimen name="dimen_0.5">0.5dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_17">17dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_27">27dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_34">34dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_42">42dp</dimen>
+    <dimen name="dimen_44">44dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_47">47dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_55">55dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_64">64dp</dimen>
+    <dimen name="dimen_69">69dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_72">72dp</dimen>
+    <dimen name="dimen_75">75dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_89">89dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="dimen_95">95dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_103">103dp</dimen>
+    <dimen name="dimen_108">108dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_167">167dp</dimen>
+    <dimen name="dimen_170">170dp</dimen>
+
+    <dimen name="dimen_164">164dp</dimen>
+    <dimen name="dimen_155">155dp</dimen>
+
+    <dimen name="dimen_180">180dp</dimen>
+    <dimen name="dimen_189">189dp</dimen>
+    <dimen name="dimen_190">190dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_210">210dp</dimen>
+    <dimen name="dimen_220">220dp</dimen>
+    <dimen name="dimen_230">230dp</dimen>
+    <dimen name="dimen_240">240dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <!--视频-->
+    <dimen name="comm_top">40dp</dimen>
+    <!--首页-->
+    <dimen name="dimen_new_list_img_w">108dp</dimen>
+    <dimen name="dimen_new_list_img_h">72dp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="dimen_9sp">9sp</dimen>
+    <dimen name="dimen_10sp">10sp</dimen>
+    <dimen name="dimen_12sp">12sp</dimen>
+    <dimen name="dimen_13sp">13sp</dimen>
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="dimen_15sp">15sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_20sp">20sp</dimen>
+    <dimen name="dimen_22sp">22sp</dimen>
+
+    <dimen name="news_list_title">16sp</dimen>
+    <dimen name="news_list_other">12sp</dimen>
+
+    <dimen name="dimen_country_list_img_w">60dp</dimen>
+    <dimen name="dimen_country_list_img_h">40dp</dimen>
+
+</resources>

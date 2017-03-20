@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        layout="@layout/activity_title_common_new" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dimen_10"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.wisdomrouter.app.view.RatioImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/dimen_18sp"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

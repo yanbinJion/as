@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f2f2f"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_big"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="大号"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#444444" />
+
+    <Button
+        android:id="@+id/btn_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="中号"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#444444" />
+
+    <Button
+        android:id="@+id/btn_small"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="小号"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/activity_title_common" />
+
+    <RelativeLayout
+        android:id="@+id/content_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout_bottom"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/article_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:gravity="center_vertical|left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_come_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/text_news_color"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                    <TextView
+                        android:id="@+id/text_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_clicks"
+                        android:drawablePadding="@dimen/dimen_5"
+                        android:gravity="center_vertical|right"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:textColor="@color/text_news_color"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                </LinearLayout>
+
+                <WebView
+                    android:id="@+id/webView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_1"
+                    android:layout_marginRight="@dimen/dimen_1"
+                    android:fadingEdge="vertical"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/rl_tools"
+                layout="@layout/article_detail_bottom_bar" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.wisdomrouter.app.view.RoundProgressBar
+        android:id="@+id/progress_wait2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android_custom:roundColor="@android:color/darker_gray"
+        android_custom:roundProgressColor="@color/red"
+        android_custom:textColor1="@color/red"
+        android_custom:textSize1="18sp" />
+
+</RelativeLayout>

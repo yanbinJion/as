@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/intro_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/intro_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="标题基地阿斯减掉撒娇"
+            android:textColor="@color/news_text_title"
+            android:textSize="@dimen/news_list_title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/intro_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="简介简介金佛山块豆腐块都搜房卡发生的发生过水电费第三方第三方的"
+                android:textColor="@color/news_text_intro"
+                android:textSize="@dimen/dimen_16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/intro_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/intro_time"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/news_text_other"
+                android:textSize="@dimen/news_list_other"/>
+
+            <TextView
+                android:id="@+id/intro_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/news_text_other"
+                android:textSize="@dimen/news_list_other"/>
+
+            <TextView
+                android:id="@+id/intro_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/intro_comment"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/news_text_other"
+                android:textSize="@dimen/news_list_other"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@color/line"/>
+
+    <RelativeLayout
+        android:id="@+id/pic_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pic_img"
+            android:layout_width="@dimen/dimen_103"
+            android:layout_height="@dimen/dimen_90"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_90"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/pic_img">
+
+            <TextView
+                android:id="@+id/pic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:textColor="@color/news_text_title"
+                android:textSize="@dimen/news_list_title"/>
+
+            <TextView
+                android:id="@+id/pic_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_title"
+                android:layout_marginTop="2dp"
+                android:gravity="left|top"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@color/news_text_intro"
+                android:textSize="@dimen/dimen_16sp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/pic_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic_time"
+                    android:layout_alignTop="@+id/pic_time"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/pic_time"
+                    android:gravity="left"
+                    android:text=""
+                    android:textColor="@color/news_text_other"
+                    android:textSize="@dimen/news_list_other"/>
+
+                <TextView
+                    android:id="@+id/pic_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dp"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/news_text_other"
+                    android:textSize="@dimen/news_list_other"/>
+
+                <TextView
+                    android:id="@+id/pic_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/pic_comment"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/news_text_other"
+                    android:textSize="@dimen/news_list_other"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        />
+</LinearLayout>

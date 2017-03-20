@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:custom="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             android:orientation="vertical">
+
+    <com.wisdomrouter.app.view.pulltozoomview.PullToZoomListViewEx
+        android:id="@+id/zoomScr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:zoomView="@layout/view_living_head"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_living"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/iv_top"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/left_btn"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:src="@drawable/base_action_bar_back"/>
+
+
+        <ImageView
+            android:id="@+id/right_btn"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/actionbar_btn"
+            android:padding="10dp"
+            android:src="@drawable/img_share"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/loading"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_toLeftOf="@+id/tv_living"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_living"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="直播"
+            android:textColor="#ffffff"
+            android:textSize="20.0dip"/>
+    </RelativeLayout>
+</FrameLayout>

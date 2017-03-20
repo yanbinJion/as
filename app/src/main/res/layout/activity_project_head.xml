@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <com.wisdomrouter.app.view.RatioImageView
+            android:id="@+id/pro_pic"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_column"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_weight="1">
+
+            <com.wisdomrouter.app.view.ColumnHorizontalScrollView
+                android:id="@+id/cloumn_country"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:background="@color/gray"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/mRadioGroup_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingRight="@dimen/dimen_10"/>
+            </com.wisdomrouter.app.view.ColumnHorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/shade_left"
+                android:layout_width="10.0dip"
+                android:layout_height="40.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/shade_right"
+                android:layout_width="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vv"
+                android:layout_width="@dimen/dimen_5"
+                android:layout_height="@dimen/dimen_60"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:id="@+id/tv_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:maxLines="3"
+                android:textColor="@color/textpro"
+                android:textSize="@dimen/dimen_20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/content_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <TextView
+                android:id="@+id/txtAuthor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/txtTitle"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/dimen_12sp"  />
+
+            <TextView
+                android:id="@+id/txtCount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txtAuthor"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_10sp"  />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/txtCount"
+                android:layout_margin="10dp"
+                android:background="@color/gray" />
+
+            <WebView
+                android:id="@+id/txtContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/line02"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/txtContent"
+                android:layout_margin="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line02"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="活动备注"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_20sp" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="报名信息"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_20sp" />
+
+                <EditText
+                    android:id="@+id/edtNote"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:singleLine="false"
+                    android:maxLength="140"/>
+                <Button
+                    android:id="@+id/btn_reg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:text="报名参加"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="40dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+   <com.wisdomrouter.app.view.RoundProgressBar
+        android:id="@+id/roundProgressBar"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_centerInParent="true"
+        android_custom:roundColor="@android:color/darker_gray"
+        android_custom:roundProgressColor="@color/red"
+        android_custom:textColor1="@color/red"
+        android_custom:textSize1="18sp" />
+
+</RelativeLayout>

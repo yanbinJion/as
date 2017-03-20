@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <stroke
+        android:width="1px"
+        android:color="@color/votecolor" >
+    </stroke>
+
+    <solid android:color="@color/white" >
+    </solid>
+
+    <corners android:radius="@dimen/dimen_10" >
+    </corners>
+
+    <padding
+        android:bottom="@dimen/dimen_1"
+        android:left="@dimen/dimen_10"
+        android:right="@dimen/dimen_10"
+        android:top="@dimen/dimen_1" >
+    </padding>
+
+</shape>

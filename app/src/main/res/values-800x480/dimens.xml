@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 字体大小 -->
+    <dimen name="dimen_9sp">7sp</dimen>
+    <dimen name="dimen_10sp">8sp</dimen>
+    <dimen name="dimen_12sp">10sp</dimen>
+    <dimen name="dimen_13sp">11sp</dimen>
+    <dimen name="dimen_14sp">12sp</dimen>
+    <dimen name="dimen_15sp">13sp</dimen>
+    <dimen name="dimen_16sp">14sp</dimen>
+    <dimen name="dimen_18sp">16sp</dimen>
+    <dimen name="dimen_20sp">16sp</dimen>
+    <dimen name="dimen_22sp">18sp</dimen>
+
+    <dimen name="news_list_title">14sp</dimen>
+    <dimen name="news_list_other">10sp</dimen>
+</resources>

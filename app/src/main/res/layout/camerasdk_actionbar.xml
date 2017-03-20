@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_actionbar_root"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/camerasdk_title_rlyt_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/camerasdk_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:singleLine="true"
+            android:text="取消"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camerasdk_title_rlyt_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true">
+
+
+        <TextView
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_centerVertical="true"
+            android:id="@+id/camerasdk_title_txv_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+           android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/camerasdk_actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:maxLength="15"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:singleLine="true"
+        android:text="@string/camerasdk_album_all"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

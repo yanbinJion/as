@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Gallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="dimension" />
+        <attr name="delayMillis" format="integer" />
+        <attr name="circleColor" format="color" />
+
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLength" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="PieProgress">
+        <attr name="foregroundColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="textColor1" format="color" />
+        <attr name="textSize1" format="dimension" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="stl_SmartTabLayout">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean" />
+        <attr name="stl_indicatorWithoutPadding" format="boolean" />
+        <attr name="stl_indicatorInFront" format="boolean" />
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0" />
+            //动画
+            <enum name="linear" value="1" />
+            //直线
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+        <attr name="stl_indicatorColor" format="color" />
+        <attr name="stl_indicatorColors" format="reference" />
+        <attr name="stl_indicatorThickness" format="dimension" />
+        <attr name="stl_indicatorCornerRadius" format="dimension" />
+        <attr name="stl_overlineColor" format="color" />
+        <attr name="stl_overlineThickness" format="dimension" />
+        <attr name="stl_underlineColor" format="color" />
+        <attr name="stl_underlineThickness" format="dimension" />
+        <attr name="stl_dividerColor" format="color" />
+        <attr name="stl_dividerColors" format="reference" />
+        //中间分割线的颜色
+        <attr name="stl_dividerThickness" format="dimension" />
+        //中间分割线的距离
+        <attr name="stl_defaultTabBackground" format="reference" />
+        <attr name="stl_defaultTabTextAllCaps" format="boolean" />
+        <attr name="stl_defaultTabTextColor" format="color|reference" />
+        <attr name="stl_defaultTabTextSize" format="dimension" />
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension" />
+        <attr name="stl_defaultTabTextMinWidth" format="dimension" />
+        <attr name="stl_customTabTextLayoutId" format="reference" />
+        <attr name="stl_customTabTextViewId" format="reference" />
+        <attr name="stl_distributeEvenly" format="boolean" />
+        //如果设置为true，每个选项卡被赋予了相同的权重
+        <attr name="stl_clickable" format="boolean" />
+        <attr name="stl_selectedTabTextColor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="GridViewPager">
+        <attr name= "gvpColumnNumber" format="integer" />
+        <attr name= "gvpRowNumber" format="integer" />
+        <attr name= "gvpMinCellWidth" format="dimension"/>
+        <attr name= "gvpMinCellHeight" format="dimension"/>
+        <attr name= "gvpColumnMargin" format="dimension"/>
+        <attr name= "gvpRowMargin" format="dimension"/>
+        <attr name= "android:paddingLeft"/>
+        <attr name= "android:paddingRight"/>
+        <attr name= "android:padding"/>
+    </declare-styleable>
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30"
+        android:background="@drawable/listitem_selector" >
+
+        <TextView
+            android:id="@+id/column_tv_newstitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="测试"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingBottom="@dimen/dimen_5"
+            android:textColor="@color/clum_textcolor"
+            android:textSize="@dimen/dimen_14sp" />
+        <!--android:layout_gravity="left|top"-->
+        <ImageView
+            android:id="@+id/delete_markView"
+            android:layout_width="@dimen/dimen_10"
+            android:layout_height="@dimen/dimen_10"
+            android:layout_alignRight="@+id/column_tv_newstitle"
+            android:layout_alignTop="@+id/column_tv_newstitle"
+            android:adjustViewBounds="true"
+            android:layout_gravity="top"
+            android:background="@drawable/select_delitem"
+             />
+
+        <TextView
+            android:id="@+id/column_tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

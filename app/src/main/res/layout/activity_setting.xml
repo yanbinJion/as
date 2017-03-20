@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:context="com.wisdomrouter.app.fragment.ui.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_help"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/listitem_selector"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:text="帮助与反馈"
+                android:textColor="@color/tv_setting"
+                android:textSize="@dimen/dimen_18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_clean"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/listitem_selector"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:text="清理缓存"
+                android:textColor="@color/tv_setting"
+                android:textSize="@dimen/dimen_18sp"/>
+
+            <TextView
+                android:id="@+id/txt_hc"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dimen_16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_update"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/listitem_selector"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/txt_01"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:text="检查更新"
+                android:textColor="@color/tv_setting"
+                android:textSize="@dimen/dimen_18sp"/>
+
+            <TextView
+                android:id="@+id/txt_version"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:text="V1.0"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dimen_16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:background="@drawable/shape_rectangle_lanmu"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:gravity="center"
+        android:text="服务热线: 4001-025-168\n技术支持:南京路特软件有限公司"
+        android:textColor="@color/tv_setting_company"
+        android:textSize="@dimen/dimen_14sp"/>
+
+</RelativeLayout>

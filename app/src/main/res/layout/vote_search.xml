@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_17"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_weight="3"
+                android:background="@drawable/bg_comment_edittext"
+                android:hint="编号或选手名称"
+                android:maxLength="30"
+                android:paddingLeft="5dp"
+                android:singleLine="true"/>
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_vote_text"
+                android:drawableLeft="@drawable/fangdajing"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="搜索"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/dimen_17"
+            android:gravity="center"
+            android:text="搜索参赛编号(ID)或名称,为Ta投票吧!"
+            android:textColor="@color/searchcolor"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/search_bv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:focusable="false"
+
+        android:horizontalSpacing="@dimen/dimen_10"
+        android:listSelector="@color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dimen_10">
+
+    </GridView>
+
+</LinearLayout>

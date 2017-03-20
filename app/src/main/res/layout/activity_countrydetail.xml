@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        layout="@layout/activity_title_common" />
+
+    <RelativeLayout
+        android:id="@+id/content_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout_bottom"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/article_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:gravity="center_vertical|left"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_come_from"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textSize="@dimen/dimen_12sp" />
+
+                    <TextView
+                        android:id="@+id/text_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_clicks"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical|right"
+                        android:text="0"
+                        android:textSize="@dimen/dimen_12sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:background="@color/line" />
+
+                <WebView
+                    android:id="@+id/webView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_1"
+                    android:layout_marginRight="@dimen/dimen_1"
+                    android:fadingEdge="vertical"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <com.wisdomrouter.app.view.RoundProgressBar
+        android:id="@+id/progress_wait3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android_custom:roundColor="@android:color/darker_gray"
+        android_custom:roundProgressColor="@color/red"
+        android_custom:textColor1="@color/red"
+        android_custom:textSize1="18sp" />
+
+</RelativeLayout>

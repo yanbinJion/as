@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/tv_living_detail_bg"
+              android:orientation="vertical">
+
+    <!-- item 标题  + 简介 + 右图 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pic_img"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_50"
+                    android:background="@drawable/live_person"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/txt_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="huihui"
+                    android:textColor="@color/tv_living_detail_title"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="12:20"
+                    android:textColor="@color/tv_living_detail_time"
+                    android:textSize="@dimen/dimen_22sp"/>
+
+                <TextView
+                    android:id="@+id/txt_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2014-05-23"
+                    android:textColor="@color/tv_living_detail_time"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/ll_left"
+                android:background="@drawable/item_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:id="@+id/webView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_7"
+                    android:text=""
+                    android:textColor="@color/tv_living_detail_title"
+                    android:textSize="@dimen/dimen_16sp"/>
+                <!--<ImageView
+                    android:id="@+id/iv_01"
+                    android:layout_width="@dimen/dimen_60"
+                    android:layout_height="@dimen/dimen_60"
+                    />-->
+
+              <com.wisdomrouter.app.view.BaseGridView
+                    android:id="@+id/gv_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_7"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:horizontalSpacing="@dimen/dimen_10"
+                    android:numColumns="3">
+                </com.wisdomrouter.app.view.BaseGridView>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+</LinearLayout>

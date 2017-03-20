@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_adv"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="80dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vg_server"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:visibility="gone"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                 android:visibility="gone"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/iv_screen_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="活动"
+                    android:textStyle="bold"
+                    android:textColor="@color/news_text_title" />
+
+                <TextView
+                    android:id="@+id/txt_acmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="更多>>"
+                    android:textStyle="bold"
+                    android:textColor="@color/news_text_title" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/life_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="200dp">
+
+                <com.wisdomrouter.app.view.HomeViewPager
+                    android:id="@+id/regist_lb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/regist_lb"
+                    android:background="#66222222"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/regist_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ac_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        android:padding="3dp" >
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="投票"
+                    android:textStyle="bold"
+                    android:textColor="@color/news_text_title" />
+
+                <TextView
+                    android:id="@+id/txt_pamore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="更多>>"
+                    android:textStyle="bold"
+                    android:textColor="@color/news_text_title" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/life_line" />
+        </LinearLayout>
+</LinearLayout>

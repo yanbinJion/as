@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listitem_selector"
+    android:orientation="vertical" >
+
+    <!-- 标题  + 简介 + 左图 -->
+
+    <RelativeLayout
+        android:id="@+id/intro_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_90"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/intro_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="标题基地阿斯减掉撒娇"
+            android:textColor="@color/news_text_title"
+            android:textSize="@dimen/news_list_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:visibility="gone" 
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/intro_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="简介简介金佛山块豆腐块都搜房卡发生的发生过水电费第三方第三方的"
+                android:textColor="@color/news_text_intro"
+                android:textSize="@dimen/dimen_16sp"
+               />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:id="@+id/intro_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/intro_time"
+                android:gravity="left"
+                android:text="评论 45 "
+                android:paddingRight="15dp"
+                android:textColor="@color/news_text_other"
+                android:textSize="@dimen/news_list_other" />
+
+            <TextView
+                android:id="@+id/intro_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:text="08-24 12:39"
+                android:textColor="@color/news_text_other"
+                android:textSize="@dimen/news_list_other" />
+
+            <TextView
+                android:id="@+id/intro_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+               android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:text="来源中国"
+                android:textColor="@color/news_text_other"
+                android:textSize="@dimen/news_list_other" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray" />
+
+</LinearLayout>

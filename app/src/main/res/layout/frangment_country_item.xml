@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_14"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_countrynews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/town_time"
+            android:drawableLeft="@drawable/red_point"
+            android:drawablePadding="@dimen/dimen_14"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/votetimecolor"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/town_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/votetimecolor"
+            android:textSize="@dimen/dimen_16sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

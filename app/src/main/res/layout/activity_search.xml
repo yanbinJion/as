@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/activity_title_common"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linerwar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/register_input"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/tb"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/edtSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="9"
+                android:background="@null"
+                android:hint="请输入关键字..."
+                android:maxLength="30"
+                android:paddingLeft="5dp"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:id="@+id/deletimg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/tb2"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/linerwar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/linerwar"
+            android:background="@drawable/register_input"
+            android:padding="1dp"
+            android:text="搜索"
+            android:textColor="@color/dark_gray"/>
+    </LinearLayout>
+
+    <com.wisdomrouter.app.view.ViewPaperListView
+        android:id="@+id/search_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical"/>
+
+</LinearLayout>

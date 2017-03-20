@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/left_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_circle_leftlogin"
+            android:padding="@dimen/dimen_10">
+
+            <com.wisdomrouter.app.view.CircleImageView
+                android:id="@+id/iv_login"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/right_menu_person"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center_horizontal"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/leftList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/left_login"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:focusableInTouchMode="false"
+        android:listSelector="#66222222"
+        android:orientation="vertical"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:padding="@dimen/dimen_5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="@dimen/dimen_18"
+                android:layout_height="@dimen/dimen_18"
+                android:background="@drawable/left_ic_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="设置"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="@dimen/dimen_18"
+                android:layout_height="@dimen/dimen_18"
+                android:background="@drawable/main_search" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="搜索"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

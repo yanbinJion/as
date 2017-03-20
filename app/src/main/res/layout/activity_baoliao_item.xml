@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="审核中"
+                android:textColor="@color/tv_bao_check"
+                android:textSize="@dimen/dimen_18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/line"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_broke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_top"
+            android:layout_marginBottom="@dimen/dimen_10">
+
+            <TextView
+                android:id="@+id/tv_broketime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:text="2015年12月24日 07:24"
+                android:textColor="@color/tv_bao_time"
+                android:textSize="@dimen/dimen_12sp"/>
+
+            <TextView
+                android:id="@+id/tv_disclosetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_broketime"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@color/tv_bao_desc"
+                android:textSize="@dimen/dimen_16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/re_broke"
+            android:layout_below="@+id/re_broke"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10">
+
+            <ImageView
+                android:id="@+id/iv_disclose"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_60"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_used"
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:background="@drawable/baoliao_used_ic"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+</RelativeLayout>

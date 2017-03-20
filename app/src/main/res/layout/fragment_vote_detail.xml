@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/content_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" >
+
+        <ScrollView
+            android:id="@+id/txtsco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/txtreal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <WebView
+                    android:id="@+id/txtcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTitle"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fadingEdge="vertical"
+                    android:fadingEdgeLength="20px"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:id="@+id/txttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txtcontent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="2015-06-07"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txtcontent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="参加人数  0789"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/txtNum"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c9c9c9" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/line"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:cacheColorHint="#00000000"
+                        android:descendantFocusability="blocksDescendants"
+                        android:divider="@null"
+                        android:fadingEdge="none"
+                        android:focusableInTouchMode="false"
+                        android:orientation="vertical" />
+
+                    <Button
+                        android:id="@+id/btn_vote"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/shape_rectangle_tijiao"
+                        android:text="提交"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_wait"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:indeterminate="false" />
+
+</RelativeLayout>

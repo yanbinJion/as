@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/vote_info_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_210"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/vote_info_img"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/vote_info_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/vote_ll"
+                    android:textSize="@dimen/dimen_18sp"/>
+
+                <View
+                    android:id="@+id/lineview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_below="@+id/vote_info_num"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_toLeftOf="@+id/vote_ll"
+                    android:background="@color/line"/>
+
+                <TextView
+                    android:id="@+id/vote_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/lineview"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_toLeftOf="@+id/vote_ll"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dimen_18sp"/>
+
+                <View
+                    android:id="@+id/line02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_below="@+id/vote_info_name"
+                    android:layout_marginBottom="@dimen/dimen_14"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_14"
+                    android:background="@color/line"/>
+
+
+                <LinearLayout
+                    android:id="@+id/vote_ll"
+                    android:layout_width="@dimen/dimen_155"
+                    android:layout_height="@dimen/dimen_60"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_vote_counts"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_17"
+                        android:drawableLeft="@drawable/vote_info_piao"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="票数："
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/vote_info_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vote_info_jieshao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/line02"
+                    android:text="参赛介绍："
+                    android:textSize="18sp"/>
+
+                <WebView
+                    android:id="@+id/vote_info_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/vote_info_jieshao"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fadingEdgeLength="20dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/vote_info_detail"
+                    android:background="@color/white"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+        android:paddingTop="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/vote_info_voted"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_vote_red"
+                android:drawableLeft="@drawable/vote_info_toupiao"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:text="为Ta投票"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/vote_info_canvassing"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_vote_blue"
+                android:drawableLeft="@drawable/vote_info_lapiao"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:text="为Ta拉票"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

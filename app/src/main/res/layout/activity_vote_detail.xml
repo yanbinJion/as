@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_90"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            >
+
+            <ImageView
+                android:id="@+id/news_img"
+                android:layout_width="@dimen/dimen_90"
+                android:layout_height="@dimen/dimen_60"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/news_img"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_toRightOf="@id/news_img">
+
+                <TextView
+                    android:id="@+id/news_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/dimen_2"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_toLeftOf="@+id/txt"
+                    android:singleLine="true"
+                    android:text="活动一"
+                    android:textColor="@color/news_text_title"
+                    android:textSize="@dimen/dimen_18sp"/>
+
+                <TextView
+                    android:id="@+id/news_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/news_title"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:singleLine="true"
+                    android:text="2014"
+                    android:textColor="@color/votetextcolor"
+                    android:textSize="@dimen/dimen_12sp"/>
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_vote_button"
+                    android:gravity="center"
+                    android:text="投票"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/dimen_18sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@color/line"/>
+</LinearLayout>

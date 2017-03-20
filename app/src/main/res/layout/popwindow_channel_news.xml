@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5F6"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/select_del"
+        android:gravity="right|center_vertical"
+        android:onClick="close"
+        android:textColor="@color/dark_gray"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/home_center_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_17"
+                >
+
+                <TextView
+                    android:id="@+id/home_center_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="我的频道"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_toRightOf="@+id/home_center_tv_title"
+                    android:text="点击进入栏目"
+                    android:textColor="@color/tv_collect_time"
+                    android:textSize="@dimen/dimen_12sp" />
+                <TextView
+                    android:id="@+id/txt_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="编辑"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingRight="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_5"
+                    android:paddingBottom="@dimen/dimen_5"
+                    android:background="@drawable/shape_rectangle_yzm"
+                    android:textColor="@color/app_topbg"
+                    android:textSize="@dimen/dimen_13sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+               <!-- <com.wisdomrouter.app.view.PagedDragDropGrid-->
+                <com.wisdomrouter.app.view.BaseGridView
+                    android:id="@+id/column_edit_grid_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:horizontalSpacing="@dimen/dimen_7"
+                    android:listSelector="@null"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:verticalSpacing="@dimen/dimen_8">
+
+                </com.wisdomrouter.app.view.BaseGridView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:layout_marginBottom="@dimen/dimen_17"
+                android:gravity="left"
+                android:text="频道推荐"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <!--<FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp">-->
+
+                <com.wisdomrouter.app.view.BaseGridView
+                    android:id="@+id/column_edit_gv_gvcolumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/dimen_7"
+                    android:numColumns="4"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:listSelector="@null"
+                    android:verticalSpacing="@dimen/dimen_8" />
+           <!-- </FrameLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

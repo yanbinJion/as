@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/vote_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <com.wisdomrouter.app.view.RatioImageView
+                    android:id="@+id/img_vote_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                     />
+            <TextView
+                android:id="@+id/tv_vote_detail_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_vote_list"
+                android:gravity="center"
+                android:text="花花"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55"
+            android:background="@color/frin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_toLeftOf="@+id/btn_vote_detail_item_do"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_vote_detail_item_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="编号：003"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_vote_detail_item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="得票数：1000"
+                    android:textSize="@dimen/dimen_16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_vote_detail_item_do"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@drawable/bg_vote_text"
+                android:paddingLeft="@dimen/dimen_7"
+                android:paddingRight="@dimen/dimen_7"
+                android:text="查看"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/vote_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:button="@drawable/vote_selector_checkbox"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false" />
+
+</FrameLayout>
