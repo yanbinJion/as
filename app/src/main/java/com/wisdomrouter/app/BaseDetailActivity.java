@@ -57,7 +57,7 @@ public class BaseDetailActivity extends FinalActivity implements
     private PopupWindow popupwindow = null;
     private ActionUtils actionUtils;
     protected ImageLoader imageLoader = ImageLoader.getInstance();
-    // 手指向右滑动时的最小速度
+    // 手指向右滑动时的最小速度 需要提交
     private static final int XSPEED_MIN = 50;
 
     // 手指向右滑动时的最小距离
