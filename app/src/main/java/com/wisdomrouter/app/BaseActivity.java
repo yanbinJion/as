@@ -43,7 +43,7 @@ public class BaseActivity extends FragmentActivity implements
         _isVisible = true;
         // 统计启动次数test
         PushAgent.getInstance(this).onAppStart();
-        // 闪退次数
+        // 闪退次数github仓库有变化
         MobclickAgent.updateOnlineConfig(this);
     }
 
