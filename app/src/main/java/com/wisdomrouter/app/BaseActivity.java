@@ -41,7 +41,7 @@ public class BaseActivity extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         _isVisible = true;
-        // 统计启动次数
+        // 统计启动次数test
         PushAgent.getInstance(this).onAppStart();
         // 闪退次数
         MobclickAgent.updateOnlineConfig(this);
