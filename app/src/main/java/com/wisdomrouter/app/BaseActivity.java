@@ -177,7 +177,7 @@ public class BaseActivity extends FragmentActivity implements
         return fragment;
     }
     public String wrapHtml(String content) {
-        // 需要做处理，因为pre会保持样式不变
+        // 需要做处理，因为pre会保持样式不变test github
         if (content != null) {
             content = content.replaceAll("<pre>", "<p>");
             content = content.replaceAll("</pre>", "</p>");
